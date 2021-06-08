@@ -8,4 +8,11 @@ public class Library {
         this.stock = new ArrayList<>();
     }
 
+    public int getBookCount() {
+        return stock.size();
+    }
+
+    public void addBookToStock(Book book) {
+        this.stock.add(book);
+    }
 }
