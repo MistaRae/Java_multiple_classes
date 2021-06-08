@@ -56,8 +56,10 @@ public class LibraryTest {
     @Test
     public void borrowerCanBorrow(){
         library.addBookToStock(theHobbit);
-        mark.borrowBook();
-        assertEquals(1, mark.getnumOfBorrowedBooks());
+        mark.borrowBook(theHobbit);
+        assertEquals(1, mark.getNumOfBorrowedBooks());
+
+        assertEquals("The Hobbit", );
 
     }
 

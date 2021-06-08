@@ -28,4 +28,13 @@ public class Library {
     public boolean isFull() {
         return this.stock.size() >= this.capacity;
     }
+
+    public Book removeBook(Book selectedBook) {
+        for (Book book : stock) {
+            if (book == selectedBook) {
+
+            }
+
+        }
+    }
 }
