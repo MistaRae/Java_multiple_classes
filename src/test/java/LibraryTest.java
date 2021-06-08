@@ -2,6 +2,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 public class LibraryTest {
 
@@ -35,6 +36,11 @@ public class LibraryTest {
     @Test
     public void libraryHasCapacity(){
         assertEquals(3, library.getCapacity());
+    }
+
+    @Test
+    public void libraryCanCheckIfStockIsFull(){
+        assertFalse(library.isFull());
     }
 
     @Test
