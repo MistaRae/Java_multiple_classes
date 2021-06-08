@@ -15,7 +15,7 @@ public class Library {
     }
 
     public String addBookToStock(Book book) {
-        if (this.stock.size() < this.capacity) {
+        if (!isFull()) {
             this.stock.add(book);
         return "Book added";
         } else return "insufficient space";
